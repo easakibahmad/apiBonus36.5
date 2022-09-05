@@ -1,7 +1,7 @@
 //find current temparature of a city
 const loadCityTemparature = ( city ) =>
 {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ city }&appid=${ `8b052a3cf3042a58587bd274cab5e181` }&units=metric`
+
     fetch( url )
         .then( res => res.json() )
         .then( data => displayData( data ) )
